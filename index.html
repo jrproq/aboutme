@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Introduction of Computing Midterms</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+<style>
+    /* Hide the modal by default */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Background overlay */
+    }
+    /* Modal content box */
+    
+    .modal-content {
+        background-color: white;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 400px;
+        text-align: center;
+    }
+    /* Close button */
+    
+    .close {
+        color: red;
+        float: right;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    
+    .close:hover {
+        color: darkred;
+    }
+</style>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/img/logo.png" alt="">
+                <h1 class="sitename">La Plume </h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html#hero" class="active">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-bg">
+                <img src="assets/img/n1yjfxd01r871.jpg" alt="">
+            </div>
+            <div class="container text-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1 data-aos="fade-up">Welcome to <span>My Website</span></h1>
+                    <p data-aos="fade-up" data-aos-delay="100">A quick view on someone else's llife<br></p>
+
+                    <img src="assets/img/Untitled design (12).png" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+                </div>
+            </div>
+
+        </section>
+
+
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                        <p class="who-we-are">Personal Information</p>
+                        <h3>Hi! I am Jerome Ruiz</h3>
+                        <p>
+                            Program: Bachelor of Science in Computer Science with Specialization of Machine Learning
+                        </p>
+                        <ul class="details">
+                            <li> <span>Age: 18 Years Old.</span></li>
+                            <li> <span>Hobby: Writing proses and reading novels.</span></li>
+
+
+                        </ul>
+                        <a href="about.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                    <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                        <div class="col-lg-12">
+                            <img src="assets/img/aboutme.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- /About Section -->
+
+
+        <!-- Favorite Section -->
+        <section id="Favorite" class="Favorite section light-background">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Favorite Authors</h2>
+                <p>Authors I am deeply fonded of</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                        {
+                            "loop": true,
+                            "speed": 600,
+                            "autoplay": {
+                                "delay": 5000
+                            },
+                            "slidesPerView": "auto",
+                            "pagination": {
+                                "el": ".swiper-pagination",
+                                "type": "bullets",
+                                "clickable": true
+                            },
+                            "breakpoints": {
+                                "320": {
+                                    "slidesPerView": 3,
+                                    "spaceBetween": 40
+                                },
+                                "1200": {
+                                    "slidesPerView": 3,
+                                    "spaceBetween": 1
+                                }
+                            }
+                        }
+                    </script>
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="Favorite-item">
+
+                                <p>
+                                    I love him, he's literally me.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/kafka.jpg" class="Favorite-img" alt="">
+                                    <h3>Franza Kafka</h3>
+                                    <h4>Novelist</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="Favorite-item">
+
+                                <p>
+                                    I love him, he's literally me.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/kafka.jpg" class="Favorite-img" alt="">
+                                    <h3>Franza Kafka</h3>
+                                    <h4>Novelist</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+                            <div class="Favorite-item">
+
+                                <p>
+                                    He wrote one of the best psychology manhwa i have ever read—Pigpen, Sweet Home, and Shotgun Boy.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/kim-carnby.jpg" class="Favorite-img" alt="">
+                                    <h3>Kim Carnby</h3>
+                                    <h4>Manhwaga</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End Favorite item -->
+
+                        <div class="swiper-slide">
+                            <div class="Favorite-item">
+
+                                <p>
+                                    He is well-known manga artist for creating azumanga daioh and youtsbato&!. I love his mangas as I considered it as one of the best coping mechanism.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/yotsubato.jpg" class="Favorite-img" alt="">
+                                    <h3>Kiyohiko Azuma</h3>
+                                    <h4>Mangaka</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Favorite item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Favorite Section -->
+
+
+        <!-- sTART DETAIL item -->
+
+        <!--  <section class="cardy-hover">
+      <div class=container>
+        <div class=card>
+            <div class=image>
+                <img href="#" src="assets/img/john-locke.jpg">
+            </div>
+            <div class=content>
+                <h3>John Locke</h3>
+                <p>a 17th-century philosopher, believed in the power of reason and the
+                    importance of individual rights. He argued that all humans are born with a blank slate, or
+                    "tabula rasa," shaped by their experiences.
+            </div>
+        </div>
+    </div>
+    <div class=container>
+      <div class=card>
+          <div class=image>
+              <img href="#" src="assets/img/john-locke.jpg">
+          </div>
+          <div class=content>
+              <h3>John Locke</h3>
+              <p>a 17th-century philosopher, believed in the power of reason and the
+                  importance of individual rights. He argued that all humans are born with a blank slate, or
+                  "tabula rasa," shaped by their experiences.
+          </div>
+      </div>
+  </div>
+  <div class=container>
+    <div class=card>
+        <div class=image>
+            <img href="#" src="assets/img/john-locke.jpg">
+        </div>
+        <div class=content>
+            <h3>John Locke</h3>
+            <p>a 17th-century philosopher, believed in the power of reason and the
+                importance of individual rights. He argued that all humans are born with a blank slate, or
+                "tabula rasa," shaped by their experiences.
+        </div>
+    </div>
+</div>
+      
+    </section>-->
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section light-background">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="container">
+
+                <div class="row g-5">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-item item-cyan position-relative">
+                            <div>
+                                <i class="fa-brands fa-facebook"></i>
+                                <h3><a href="https://www.facebook.com/unoreplika" style="color: #77b6ca;">Jerome Ruiz</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-item item-cyan position-relative">
+                            <div>
+                                <i class="fas fa-envelope"></i>
+                                <h3><a href="https://jeromeruiz121605@gmail.com/" style="color: #77b6ca;">jeromeruiz121605@gmail.com</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-item item-orange position-relative">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>(+63) 992 487 7371</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-item item-orange position-relative">
+                            <i class="fa-solid fa-book"></i>
+                            <div>
+                                <h3><a href="https://anilist.co/user/Resvn/" style="color: #77b6ca;">Resvn</a></h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Contact Section -->
+
+
+
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+
+
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">2024 My Simple Website</strong>
+
+
+                <script src="script.js"></script>
+    </footer>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
